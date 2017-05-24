@@ -1,0 +1,14 @@
+.plane-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plane-card {
+  border: solid 8px #16a085;
+  border-radius: 20px;
+  background-color: #1abc9c;
+  text-align: center;
+  width: calc(50% - 20px);
+  margin: 10px;
+  color: #2c3e50;
+}

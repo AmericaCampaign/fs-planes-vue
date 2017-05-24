@@ -4,21 +4,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Plane App</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="container">
 
-    <div>
-      <h1> Hello, world! </h1>
+    <div id="plane">
+      <div class="jumbotron">
+        <h3> {{ header }} </h3>
+      </div>
+      <div class="plane-flex-container">
+
+      <div class="plane-card" v-for="p in planes">
+        <h3> {{ p.type }} </h3>
+        <p> {{p.topSpeed}} </p>
+        <img :src="p.img" alt="">
+      </div>
+
+      </div>
     </div>
 
+
+      <!-- vue cden -->
+    <script src="https://unpkg.com/vue"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
