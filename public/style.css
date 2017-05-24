@@ -12,3 +12,35 @@
   margin: 10px;
   color: #2c3e50;
 }
+
+
+.myJumbo {
+  background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/dzyne_bwb_-_x-plane_-_profile.jpg') no-repeat 50%;
+  background-size: cover;
+  background-color: #1abc9c;
+  border: solid 8px #16a085;
+  color: #2c3e50;
+}
+
+.form-container {
+  background-color: #2980b9;
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+.form-group label{
+  text-align: center;
+  color: #ecf0f1;
+}
+
+.accordion-plane-panel {
+  background-color: #16a085;
+  color: #2c3e50;
+  border: none;
+}
+
+#headingThree {
+  background-color: #16a085;
+  color: #2c3e50;
+}
